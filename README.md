@@ -15,12 +15,14 @@ php artisan serve
 
 ```
 # Públicas
-GET   /api/products
-GET   /api/products/:id
 POST   /api/login
 @body: email, password
 POST   /api/register
 @body: name, email, password, password_confirmation
+GET   /api/products
+GET   /api/products/:id
+GET   /api/search/:string
+
 # Privadas
 POST   /api/products
 @body: name, slug, description, price
